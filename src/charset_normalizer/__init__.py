@@ -26,6 +26,7 @@ import logging
 from .api import from_bytes, from_fp, from_path, is_binary
 from .legacy import detect
 from .models import CharsetMatch, CharsetMatches
+from .scan import ScanReport, scan_tree
 from .utils import set_logging_handler
 from .version import VERSION, __version__
 
@@ -35,6 +36,8 @@ __all__ = (
     "from_bytes",
     "is_binary",
     "detect",
+    "scan_tree",
+    "ScanReport",
     "CharsetMatch",
     "CharsetMatches",
     "__version__",
